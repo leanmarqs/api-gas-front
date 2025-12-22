@@ -1,10 +1,21 @@
-function App() {
+import { Button } from "@/components/ui/button"
 
+import { toast } from "sonner"
+
+function App() {
   return (
     <>
-      <h2 className="text-3xl font-bold underline">
-        Hello world!
-      </h2>
+      <div className="flex min-h-svh flex-col items-center justify-center">
+        <Button
+          onClick={() =>
+            toast.success("Salvo com sucesso", {
+              description: "As alterações foram aplicadas.",
+            })
+          }
+        >
+          Click me
+        </Button>
+      </div>
     </>
   )
 }
