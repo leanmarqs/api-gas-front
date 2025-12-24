@@ -1,11 +1,7 @@
-import { ScheduleForm } from './components/ScheduleForm'
+import Form from '@/components/Form'
 
 function App() {
-  return (
-    <main className='flex min-h-svh items-center justify-center bg-muted p-4'>
-      <ScheduleForm />
-    </main>
-  )
+  return <Form />
 }
 
 export default App
