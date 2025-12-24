@@ -21,6 +21,13 @@ function Form() {
     setPurposeValue('class')
   }
 
+  const handleSubmit = () => {
+    // Aqui você pode adicionar a lógica para enviar os dados do formulário
+    alert(
+      `Nome: ${nameValue}\nEmail: ${emailValue}\nFinalidade: ${purposeValue}`,
+    )
+  }
+
   return (
     <Container
       maxWidth='sm'
@@ -133,6 +140,7 @@ function Form() {
           Apagar
         </Button>
         <Button
+          onClick={handleSubmit}
           variant='contained'
           color='primary'
           sx={{ mr: 2, borderRadius: '50px' }}
